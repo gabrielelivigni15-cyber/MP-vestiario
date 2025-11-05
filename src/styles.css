@@ -19,7 +19,14 @@ body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,
 .nav-btn{width:100%;text-align:left;background:#fff;border:1px solid #eceff3;color:#374151;padding:12px 14px;border-radius:12px;margin-bottom:10px;cursor:pointer;transition:.15s ease}
 .nav-btn.active,.nav-btn:hover{border-color:var(--mp-red);box-shadow:0 6px 16px rgba(192,0,0,.15);color:var(--mp-red)}
 .content{grid-area:content;padding:22px;overflow:auto}
-.card{background:var(--mp-card);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+.card{
+  background: var(--mp-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+  backdrop-filter: blur(4px);
+  border: 1px solid #eef0f3;
+}
 .grid{display:grid;gap:18px}
 .grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
